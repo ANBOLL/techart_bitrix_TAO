@@ -1,0 +1,171 @@
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/block/form/button/button.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+.b-button {
+  font-size: 13px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #841844;
+  border: 2px solid var(--brand-color, #841844);
+  background-color: #fff;
+  text-align: center;
+}
+.b-button:hover {
+  color: #fff;
+  border: 2px solid #841844;
+  background: #841844;
+}
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/block/form/form/form.scss ***!
+  \**********************************************************************************************************************************************************************************************/
+@media screen and (min-width: 0px) {
+  .b-form {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    box-sizing: border-box;
+    height: -moz-max-content;
+    height: max-content;
+    margin: 0;
+    width: 230px;
+  }
+  .b-form__formwidth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .b-form {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    box-sizing: border-box;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 10px;
+  }
+  .b-form__formwidth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-form {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 68px;
+    border: 2px solid #841844;
+  }
+  .b-form__formwidth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+  }
+}
+@media screen and (min-width: 1570px) {
+  .b-form {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 68px;
+    margin: 0 30px 0 0;
+    border: 2px solid #841844;
+  }
+  .b-form__formwidth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+  }
+}
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/block/form/input/input.scss ***!
+  \************************************************************************************************************************************************************************************************/
+@media screen and (min-width: 0px) {
+  .b-input {
+    font-size: 13px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #841844;
+    border: 2px solid #841844;
+    background-color: #fff;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .b-input {
+    font-size: 13px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #841844;
+    border: 2px solid #841844;
+    background-color: #fff;
+    width: -moz-min-content;
+    width: min-content;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-input {
+    font-size: 13px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #841844;
+    border: 2px solid #841844;
+    background-color: #fff;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1570px) {
+  .b-input {
+    font-size: 13px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #841844;
+    border: 2px solid #841844;
+    background-color: #fff;
+    width: 100%;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/block/form/select/select.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+.b-select {
+  font-size: 13px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #841844;
+  border: 2px solid #841844;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=form.css.map*/

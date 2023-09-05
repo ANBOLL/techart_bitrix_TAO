@@ -1,0 +1,198 @@
+@import "~style";
+
+$block-name: "b-loginform";
+
+.#{$block-name} {
+	@include breakpoint(small) {
+		&__formlogin {
+			display: flex;
+			width: auto;
+			height: max-content;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			list-style-type: none;
+			color: #841844;
+			font-size: 12px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			background-color: #fff;
+			border: 1px solid #841844;
+			margin: 5px;
+		}
+
+		&__autorize {
+			border: 2px solid #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			color: #841844;
+			cursor: pointer;
+			padding-bottom: 5px;
+		}
+
+		&__autorize:hover {
+			border: 2px solid #fff;
+			color: #fff;
+			background-color: #841844;
+		}
+
+		&__formlogin #but {
+			text-decoration: none;
+			color: #841844;
+			margin: 0 10px;
+
+			h4 {
+				margin: 10px 0;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		&__formlogin {
+			display: flex;
+			width: auto;
+			height: max-content;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			list-style-type: none;
+			color: #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			background-color: #fff;
+			border: 2px solid #841844;
+		}
+
+		&__autorize {
+			border: 2px solid #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			color: #841844;
+			cursor: pointer;
+			padding-bottom: 5px;
+		}
+
+		&__autorize:hover {
+			border: 2px solid #fff;
+			color: #fff;
+			background-color: #841844;
+		}
+
+		&__formlogin #but {
+			text-decoration: none;
+			color: #841844;
+			margin: 0 10px;
+
+			h4 {
+				margin: 10px 0;
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		&__formlogin {
+			display: flex;
+			width: auto;
+			height: 67px;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			list-style-type: none;
+			color: #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			background-color: #fff;
+			border: 2px solid #841844;
+		}
+
+		&__autorize {
+			border: 2px solid #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			color: #841844;
+			cursor: pointer;
+			padding-bottom: 5px;
+		}
+
+		&__autorize:hover {
+			border: 2px solid #fff;
+			color: #fff;
+			background-color: #841844;
+		}
+
+		&__formlogin #but {
+			text-decoration: none;
+			color: #841844;
+			margin: 0 10px;
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		&__formlogin {
+			display: flex;
+			width: auto;
+			height: 67px;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			list-style-type: none;
+			color: #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			background-color: #fff;
+			border: 2px solid #841844;
+		}
+
+		&__autorize {
+			border: 2px solid #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			color: #841844;
+			cursor: pointer;
+			padding-bottom: 5px;
+		}
+
+		&__autorize:hover {
+			border: 2px solid #fff;
+			color: #fff;
+			background-color: #841844;
+		}
+
+		&__formlogin #but {
+			text-decoration: none;
+			color: #841844;
+			margin: 0 10px;
+		}
+	}
+}

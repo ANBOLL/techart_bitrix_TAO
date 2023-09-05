@@ -1,0 +1,26 @@
+@import "~style";
+
+$block-name: "b-footer";
+
+.#{$block-name} {
+	display: flex;
+	height: auto;
+	flex-direction: column;
+
+	&__hr {
+		display: flex;
+		height: 1px;
+		margin: 0 200px;
+		background: #6c6e7b;
+	}
+
+	&__text {
+		display: flex;
+		margin: 60px auto 80px;
+		color: #000;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%;
+	}
+}

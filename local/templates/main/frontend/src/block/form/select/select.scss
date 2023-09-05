@@ -1,0 +1,15 @@
+@import "~style";
+
+$block-name: "b-select";
+
+.#{$block-name} {
+	font-size: 13px;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #841844;
+	border: 2px solid #841844;
+	background-color: #fff;
+}

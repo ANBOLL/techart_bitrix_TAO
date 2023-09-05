@@ -1,0 +1,156 @@
+/* ____________________________ */
+.component_books_top{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: max-content;
+}
+.component_books_top img{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+.titles_boks_top {
+	margin: 10px auto 0;
+	color: aliceblue;
+	font-size: 14px;
+	text-align: center;
+}
+.price_boks_top{
+	margin: 0 auto;
+}
+.circal_sale{
+	display: inline-block;
+	clear: both;
+	margin-bottom: 2px;
+	background: #f42c2c;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	transition: all 250ms ease;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+.discont_circal{
+	width: 100px;
+		height: 100px;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 100px;
+		z-index: 20;
+		position: relative;
+		top: -90px;
+		right: -10px;
+		margin: 0 0 0 auto;
+}
+.component_books_top.hover .product-item {
+    -webkit-animation: product-item-hover 300ms 1 ease;
+}
+
+.component_books_top:hover{
+    position: absolute;
+    right: -15px;
+    left: -15px;
+    padding: 15px 15px 0;
+    width: auto;
+    border: 1px solid transparent;
+    background: #fff;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.19);
+}
+/* ____________________________ */
+
+@media (min-width: 1200px){
+	/*lg*/
+	/*6*/
+	.product-item-list-col-6   > .col-xs-12 > .row > .col-md-2:nth-child(6n+1),
+	.product-item-list-col-1-6 > .col-sm-6:nth-child(2n+1),
+	.product-item-list-col-6-1 > .col-sm-6:nth-child(2n+1),
+	.product-item-list-col-1-6 > .col-sm-6  > .row > .col-md-4:nth-child(3n+1),
+	.product-item-list-col-6-1 > .col-sm-6  > .row > .col-md-4:nth-child(3n+1),
+	/*4*/
+	.product-item-list-col-4   > .col-xs-12 > .row > .col-md-3:nth-child(4n+1),
+	.product-item-list-col-1-4 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	.product-item-list-col-4-1 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	/*3*/
+	.product-item-list-col-3   > .col-xs-12 > .row > .col-sm-4:nth-child(3n+1),
+	/*2*/
+	.product-item-list-col-2   > .col-xs-12 > .row > .col-xs-6:nth-child(2n+1),
+	/*1*/
+	.product-item-list-col-1   > .col-xs-12 > .row > .col-xs-12:nth-child(1n){clear: both}
+}
+@media (min-width: 992px) and (max-width:1199px){
+	/*md*/
+	/*6*/
+	.product-item-list-col-6   > .col-xs-12 > .row > .col-md-2:nth-child(6n+1),
+	.product-item-list-col-1-6 > .col-sm-6:nth-child(2n+1),
+	.product-item-list-col-6-1 > .col-sm-6:nth-child(2n+1),
+	.product-item-list-col-1-6 > .col-sm-6 > .row > .col-md-4:nth-child(3n+1),
+	.product-item-list-col-6-1 > .col-sm-6 > .row > .col-md-4:nth-child(3n+1),
+	/*4*/
+	.product-item-list-col-4   > .col-xs-12 > .row > .col-md-3:nth-child(4n+1),
+	.product-item-list-col-1-4 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	.product-item-list-col-4-1 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	/*3*/
+	.product-item-list-col-3   > .col-xs-12 > .row > .col-sm-4:nth-child(3n+1),
+	/*2*/
+	.product-item-list-col-2   > .col-xs-12 > .row > .col-xs-6:nth-child(2n+1),
+	/*1*/
+	.product-item-list-col-1   > .col-xs-12 > .row > .col-xs-12:nth-child(1n){clear: both}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	/*sm*/
+	/*6*/
+	.product-item-list-col-6   > .col-xs-12 > .row > .col-sm-4:nth-child(3n+1),
+	.product-item-list-col-1-6 > .col-sm-6:nth-child(2n+1),
+	.product-item-list-col-6-1 > .col-sm-6:nth-child(2n+1),
+	.product-item-list-col-1-6 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	.product-item-list-col-6-1 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	/*4*/
+	.product-item-list-col-4   > .col-xs-12 > .row > .col-xs-6:nth-child(2n+1),
+	.product-item-list-col-1-4 > .col-sm-6:nth-child(2n+1),
+	.product-item-list-col-4-1 > .col-sm-6:nth-child(2n+1),
+	.product-item-list-col-1-4 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	.product-item-list-col-4-1 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	/*3*/
+	.product-item-list-col-3   > .col-xs-12 > .row > .col-sm-4:nth-child(3n+1),
+	/*2*/
+	.product-item-list-col-2   > .col-xs-12 > .row > .col-xs-6:nth-child(2n+1),
+	/*1*/
+	.product-item-list-col-1   > .col-xs-12 > .row > .col-xs-12:nth-child(1n){clear: both}
+}
+@media (max-width: 767px){
+	/*xs*/
+	/*6*/
+	.product-item-list-col-6   > .col-xs-12 > .row > .col-xs-6:nth-child(2n+1),
+	.product-item-list-col-1-6 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	.product-item-list-col-6-1 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	/*4*/
+	.product-item-list-col-4   > .col-xs-12 > .row > .col-xs-6:nth-child(2n+1),
+	.product-item-list-col-1-4 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	.product-item-list-col-4-1 > .col-sm-6 >  .row > .col-xs-6:nth-child(2n+1),
+	/*3*/
+	.product-item-list-col-3   > .col-xs-12 > .row > .col-sm-4:nth-child(3n+1),
+	/*2*/
+	.product-item-list-col-2   > .col-xs-12 > .row > .col-xs-6:nth-child(2n+1),
+	/*1*/
+	.product-item-list-col-1   > .col-xs-12 > .row > .col-xs-12:nth-child(1n){clear: both}
+}
+
+.catalog-section-header{
+	font-size:14px;
+	font-weight: bold;
+	text-align: left;
+	margin:5px 0;
+	padding:5px 15px;
+	border-bottom: 2px solid #d9dee6;
+	color: #000;
+}
+
+.catalog-section{
+	
+}
+
+.row::before {
+	display: initial;
+}

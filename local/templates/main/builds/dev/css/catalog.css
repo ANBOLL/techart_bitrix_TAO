@@ -1,0 +1,334 @@
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/block/catalog/catalogdetail/catalogdetail.scss ***!
+  \*******************************************************************************************************************************************************************************************************************/
+.b-catalogdetail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 50px;
+  width: 800px;
+  gap: 10px;
+}
+.b-catalogdetail__h1_books_detail {
+  margin: 0 auto;
+  color: #841844;
+}
+.b-catalogdetail__img_books_detail {
+  margin: 0 auto;
+  height: -moz-min-content;
+  height: min-content;
+}
+.b-catalogdetail__img_books_detail img {
+  width: 300px;
+  height: 400px;
+}
+.b-catalogdetail__price_detail_block {
+  display: flex;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #841844;
+  padding: 10px;
+}
+.b-catalogdetail__price_detail_block a {
+  text-decoration: none;
+  color: #841844;
+}
+.b-catalogdetail__discont_detail {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  z-index: 20;
+  position: relative;
+  top: -45px;
+  right: -5px;
+  margin: 0 0 0 auto;
+}
+.b-catalogdetail__element_sale_circal {
+  display: inline-block;
+  clear: both;
+  margin-bottom: 2px;
+  background: #f42c2c;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  transition: all 250ms ease;
+  border-radius: 50%;
+  width: 50px;
+}
+.b-catalogdetail__button_buy {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.4286;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #841844;
+  background-color: #fff;
+  border-color: #841844;
+}
+.b-catalogdetail__button_buy:hover {
+  color: #fff;
+  background-color: #841844;
+  border-color: #fff;
+}
+.b-catalogdetail__detail_book_content {
+  margin: 0 auto;
+  border-bottom: 1px solid #841844;
+  text-align: center;
+}
+.b-catalogdetail__item_books_detail {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: -moz-max-content;
+  width: max-content;
+  color: #841844;
+  font-size: 12px;
+}
+.b-catalogdetail dt {
+  float: left;
+  clear: both;
+  font-weight: normal;
+}
+.b-catalogdetail dd {
+  color: #000;
+  float: right;
+  margin-bottom: 3px;
+  margin-left: 5px;
+}
+.b-catalogdetail__prise_old {
+  color: #bdbdbd;
+  text-decoration: line-through;
+  white-space: nowrap;
+  font-weight: var(--ui-font-weight-bold);
+  font-size: 14px;
+  line-height: 17px;
+}
+.b-catalogdetail__prise_actual {
+  color: #d0021b;
+  white-space: nowrap;
+  font-weight: var(--ui-font-weight-bold);
+  font-size: 30px;
+  line-height: 33px;
+  transition: font-size 200ms ease;
+}
+.b-catalogdetail__prise_discont {
+  color: #bdbdbd;
+  white-space: nowrap;
+  font-weight: var(--ui-font-weight-bold);
+  font-size: 14px;
+  line-height: 17px;
+}
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/block/catalog/catalogtop/catalogtop.scss ***!
+  \*************************************************************************************************************************************************************************************************************/
+.b-catalogtop {
+  display: block;
+  box-sizing: border-box;
+  padding: 15px 0 5px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+.b-catalogtop__price_books_top {
+  margin: 10px auto;
+  text-align: center;
+}
+.b-catalogtop__price_books_top img {
+  height: 600px;
+  width: 400px;
+}
+.b-catalogtop__component_books_top {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: -moz-max-content;
+  width: max-content;
+}
+.b-catalogtop__component_books_top img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.b-catalogtop__titles_boks_top {
+  margin: 10px auto 0;
+  font-size: 14px;
+  text-align: center;
+  color: #841844;
+}
+.b-catalogtop__titles_boks_top a {
+  text-decoration: none;
+  color: #841844;
+}
+.b-catalogtop__price_boks_top {
+  margin: 0 auto;
+}
+.b-catalogtop__circal_sale {
+  display: inline-block;
+  clear: both;
+  margin-bottom: 2px;
+  background: #f42c2c;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  transition: all 250ms ease;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.b-catalogtop__discont_circal {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 100px;
+  z-index: 20;
+  position: relative;
+  top: -90px;
+  right: -10px;
+  margin: 0 0 0 auto;
+}
+.b-catalogtop__component_books_top:hover {
+  position: absolute;
+  right: -15px;
+  left: -15px;
+  padding: 15px 15px 0;
+  width: auto;
+  border: 1px solid transparent;
+  background: #fff;
+  box-shadow: 0 7px 15px 0 #000;
+}
+.b-catalogtop__btns {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.4286;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: 0;
+  background-color: #fff;
+  border-color: #841844;
+  color: #841844;
+}
+.b-catalogtop__btns:hover {
+  outline: 0;
+  background-color: #841844;
+  border-color: #fff;
+  color: #fff;
+}
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/block/catalog/filter/filter.scss ***!
+  \*****************************************************************************************************************************************************************************************************/
+.b-filter {
+  position: relative;
+  padding-top: 26px;
+  background-color: #e4d5dc;
+}
+.b-filter__filter_title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #841844;
+}
+.b-filter__btn_themes {
+  background-color: #e4d5dc;
+  border-color: #841844;
+  color: #841844;
+}
+.b-filter__btn_themes:hover {
+  background-color: #841844;
+  border-color: #fff;
+  color: #fff;
+}
+.b-filter__btn_link {
+  background-color: #e4d5dc;
+  border-color: #841844;
+  color: #841844;
+}
+.b-filter__btn_link:hover {
+  background-color: #841844;
+  border-color: #fff;
+  color: #fff;
+}
+.b-filter__btn_link:focus {
+  background-color: #841844;
+  border-color: #fff;
+  color: #fff;
+}
+.b-filter__box_title span {
+  color: #841844;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+.b-filter__container_block {
+  font-size: 11px;
+  color: #841844;
+  background-color: #e4d5dc;
+}
+.b-filter__input_container input {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  height: 38px;
+  margin: 0;
+  padding: 0 4px;
+  border: 1px solid #841844;
+  border-radius: 2px;
+  background: #e4d5dc;
+  outline: 0;
+}
+.b-filter__pricebar_v {
+  background: #841844;
+  z-index: 80;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.b-filter__pricebar_vn {
+  background: #e4d5dc;
+}
+.b-filter__popup_result {
+  display: inline-block;
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: -7px;
+  border: 1px solid #841844;
+  margin-left: 5px;
+  border-radius: 5%;
+  padding: 2px;
+}
+.b-filter__popup_resultb-filter#modef_num {
+  color: #841844;
+}
+.b-filter__popup_result a {
+  text-decoration: none;
+  color: #841844;
+  line-height: 10px;
+}
+.b-filter__param_text {
+  display: block;
+  text-align: left;
+  color: #841844;
+}
+
+/*# sourceMappingURL=catalog.css.map*/

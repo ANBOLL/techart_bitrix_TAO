@@ -1,0 +1,144 @@
+@import "~style";
+
+$block-name: "b-catalogdetail";
+
+.#{$block-name} {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	height: max-content;
+	margin-bottom: 50px;
+	width: 800px;
+	gap: 10px;
+
+	&__h1_books_detail {
+		margin: 0 auto;
+		color: #841844;
+	}
+
+	&__img_books_detail {
+		margin: 0 auto;
+		height: min-content;
+
+		img {
+			width: 300px;
+			height: 400px;
+		}
+	}
+
+	&__price_detail_block {
+		display: flex;
+		flex-direction: column;
+		width: max-content;
+		height: auto;
+		margin: 0 auto;
+		border: 1px solid #841844;
+		padding: 10px;
+
+		a {
+			text-decoration: none;
+			color: #841844;
+		}
+	}
+
+	&__discont_detail {
+		width: 50px;
+		height: 50px;
+		font-size: 18px;
+		line-height: 50px;
+		z-index: 20;
+		position: relative;
+		top: -45px;
+		right: -5px;
+		margin: 0 0 0 auto;
+	}
+
+	&__element_sale_circal {
+		display: inline-block;
+		clear: both;
+		margin-bottom: 2px;
+		background: #f42c2c;
+		color: #fff;
+		vertical-align: middle;
+		text-align: center;
+		transition: all 250ms ease;
+		border-radius: 50%;
+		width: 50px;
+	}
+
+	&__button_buy {
+		display: inline-block;
+		padding: 6px 12px;
+		margin-bottom: 0;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.4286;
+		text-align: center;
+		cursor: pointer;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		color: #841844;
+		background-color: #fff;
+		border-color: #841844;
+	}
+
+	&__button_buy:hover {
+		color: #fff;
+		background-color: #841844;
+		border-color: #fff;
+	}
+
+	&__detail_book_content {
+		margin: 0 auto;
+		border-bottom: 1px solid #841844;
+		text-align: center;
+	}
+
+	&__item_books_detail {
+		display: block;
+		overflow: hidden;
+		margin: 0 auto;
+		width: max-content;
+		color: #841844;
+		font-size: 12px;
+	}
+
+	dt {
+		float: left;
+		clear: both;
+		font-weight: normal;
+	}
+
+	dd {
+		color: #000;
+		float: right;
+		margin-bottom: 3px;
+		margin-left: 5px;
+	}
+
+	&__prise_old {
+		color: #bdbdbd;
+		text-decoration: line-through;
+		white-space: nowrap;
+		font-weight: var(--ui-font-weight-bold);
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__prise_actual {
+		color: #d0021b;
+		white-space: nowrap;
+		font-weight: var(--ui-font-weight-bold);
+		font-size: 30px;
+		line-height: 33px;
+		transition: font-size 200ms ease;
+	}
+
+	&__prise_discont {
+		color: #bdbdbd;
+		white-space: nowrap;
+		font-weight: var(--ui-font-weight-bold);
+		font-size: 14px;
+		line-height: 17px;
+	}
+}

@@ -1,0 +1,81 @@
+@import "~style";
+
+$block-name: "b-map";
+
+.#{$block-name} {
+	@include breakpoint(small) {
+		border: 2px solid #841844;
+		margin: 20px;
+		width: auto;
+		height: 400px;
+		padding: 5px;
+
+		&.active {
+			display: none;
+		}
+
+		&__buttons {
+			margin: 10px auto;
+			text-align: center;
+		}
+
+		&__but {
+			border: 2px solid $color-main;
+			color: $color-main;
+			background-color: #fff;
+			padding: 10px;
+			width: max-content;
+			cursor: pointer;
+
+			&.activebut {
+				border: 2px solid $color-main;
+				color: #fff;
+				background-color: $color-main;
+			}
+
+			&:hover {
+				border: 2px solid $color-main;
+				color: #fff;
+				background-color: $color-main;
+			}
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		border: 2px solid #841844;
+		margin: 20px 200px;
+		width: auto;
+		height: 400px;
+		padding: 5px;
+
+		&.active {
+			display: none;
+		}
+
+		&__buttons {
+			margin: 20px auto;
+			text-align: center;
+		}
+
+		&__but {
+			border: 2px solid $color-main;
+			color: $color-main;
+			background-color: #fff;
+			padding: 20px;
+			width: max-content;
+			cursor: pointer;
+
+			&.activebut {
+				border: 2px solid $color-main;
+				color: #fff;
+				background-color: $color-main;
+			}
+
+			&:hover {
+				border: 2px solid $color-main;
+				color: #fff;
+				background-color: $color-main;
+			}
+		}
+	}
+}

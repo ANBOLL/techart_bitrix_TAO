@@ -1,0 +1,118 @@
+@import "~style";
+
+$block-name: "b-catalogtop";
+
+.#{$block-name} {
+	display: block;
+	box-sizing: border-box;
+	padding: 15px 0 5px;
+	width: max-content;
+	margin: 0 auto;
+	border: 1px solid transparent;
+	border-radius: 2px;
+
+	&__price_books_top {
+		margin: 10px auto;
+		text-align: center;
+
+		img {
+			height: 600px;
+			width: 400px;
+		}
+	}
+
+	&__component_books_top {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: max-content;
+
+		img {
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+		}
+	}
+
+	&__titles_boks_top {
+		margin: 10px auto 0;
+		font-size: 14px;
+		text-align: center;
+		color: $color-main;
+
+		a {
+			text-decoration: none;
+			color: $color-main;
+		}
+	}
+
+	&__price_boks_top {
+		margin: 0 auto;
+	}
+
+	&__circal_sale {
+		display: inline-block;
+		clear: both;
+		margin-bottom: 2px;
+		background: #f42c2c;
+		color: #fff;
+		vertical-align: middle;
+		text-align: center;
+		transition: all 250ms ease;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+	}
+
+	&__discont_circal {
+		width: 100px;
+		height: 100px;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 100px;
+		z-index: 20;
+		position: relative;
+		top: -90px;
+		right: -10px;
+		margin: 0 0 0 auto;
+	}
+
+	&__component_books_top:hover {
+		position: absolute;
+		right: -15px;
+		left: -15px;
+		padding: 15px 15px 0;
+		width: auto;
+		border: 1px solid transparent;
+		background: #fff;
+		box-shadow: 0 7px 15px 0 #000;
+	}
+
+	&__btns {
+		display: inline-block;
+		padding: 6px 12px;
+		margin-bottom: 0;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.4286;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		touch-action: manipulation;
+		cursor: pointer;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		outline: 0;
+		background-color: #fff;
+		border-color: $color-main;
+		color: $color-main;
+
+		&:hover {
+			outline: 0;
+			background-color: $color-main;
+			border-color: #fff;
+			color: #fff;
+		}
+	}
+}

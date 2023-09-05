@@ -1,0 +1,75 @@
+@import "~style";
+
+$block-name: "b-form";
+
+.#{$block-name} {
+	@include breakpoint(small) {
+		display: flex;
+		list-style-type: none;
+		align-items: center;
+		box-sizing: border-box;
+		height: max-content;
+		margin: 0;
+		width: 230px;
+
+		&__formwidth {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 3px;
+		}
+	}
+
+	@include breakpoint(medium) {
+		display: flex;
+		list-style-type: none;
+		align-items: center;
+		box-sizing: border-box;
+		height: max-content;
+		margin-top: 10px;
+
+		&__formwidth {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 3px;
+		}
+	}
+
+	@include breakpoint(large) {
+		display: flex;
+		list-style-type: none;
+		align-items: center;
+		gap: 15px;
+		padding: 5px;
+		box-sizing: border-box;
+		height: 68px;
+		border: 2px solid #841844;
+
+		&__formwidth {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 3px;
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		display: flex;
+		list-style-type: none;
+		align-items: center;
+		gap: 15px;
+		padding: 5px;
+		box-sizing: border-box;
+		height: 68px;
+		margin: 0 30px 0 0;
+		border: 2px solid #841844;
+
+		&__formwidth {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 3px;
+		}
+	}
+}

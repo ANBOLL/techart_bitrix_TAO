@@ -1,0 +1,372 @@
+@import "~style";
+
+$block-name: "b-header";
+
+.#{$block-name} {
+	@include breakpoint(small) {
+		display: flex;
+		padding: 5px 0;
+		background: #fff;
+		flex-flow: row wrap;
+		justify-content: center;
+		top: 0;
+		z-index: 200;
+		border-bottom: 2px solid #000;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		width: 100%;
+
+		&__a {
+			text-decoration: none;
+			display: flex;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+
+		&__logo {
+			display: flex;
+			width: max-content;
+			height: auto;
+			align-items: center;
+			margin: 0 auto;
+			justify-content: space-between;
+		}
+
+		&__logo-img {
+			height: 42px;
+			width: 55px;
+		}
+
+		&__logo-text {
+			display: flex;
+			margin: 0;
+			color: #2c145e;
+			font-family: "Segoe UI";
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 132%;
+			letter-spacing: 3.5px;
+			text-transform: uppercase;
+		}
+
+		&__navigation {
+			display: flex;
+			width: auto;
+			height: auto;
+			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
+			list-style-type: none;
+			margin: 0;
+		}
+
+		&__item {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			align-items: center;
+			gap: 15px;
+			padding: 10px 5px;
+			box-sizing: border-box;
+		}
+
+		&__list {
+			padding: 0 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border: 2px solid $color-main;
+			text-decoration: none;
+			color: #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		&__h4 {
+			display: block;
+			margin-block-start: 1.33em;
+			margin-block-end: 1.33em;
+			margin-inline-start: 0;
+			margin-inline-end: 0;
+			font-weight: bold;
+			color: $color-main;
+		}
+	}
+
+	@include breakpoint(medium) {
+		display: flex;
+		padding: 5px 0;
+		background: #fff;
+		flex-flow: row wrap;
+		justify-content: center;
+		position: sticky;
+		top: 0;
+		z-index: 200;
+		border-bottom: 2px solid #000;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+
+		&__a {
+			text-decoration: none;
+			display: flex;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+
+		&__logo {
+			display: flex;
+			width: max-content;
+			height: auto;
+			align-items: center;
+			margin: 0 auto;
+			justify-content: space-between;
+		}
+
+		&__logo-text {
+			display: flex;
+			margin: 0;
+			color: #2c145e;
+			font-family: "Segoe UI";
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 132%;
+			letter-spacing: 3.5px;
+			text-transform: uppercase;
+		}
+
+		&__navigation {
+			display: flex;
+			width: auto;
+			height: auto;
+			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
+			list-style-type: none;
+			margin: 0;
+		}
+
+		&__item {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			align-items: center;
+			gap: 15px;
+			padding: 10px 5px;
+			box-sizing: border-box;
+		}
+
+		&__list {
+			padding: 0 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border: 2px solid $color-main;
+			text-decoration: none;
+			color: #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		&__h4 {
+			display: block;
+			margin-block-start: 1.33em;
+			margin-block-end: 1.33em;
+			margin-inline-start: 0;
+			margin-inline-end: 0;
+			font-weight: bold;
+			color: $color-main;
+		}
+	}
+
+	@include breakpoint(large) {
+		display: flex;
+		padding: 10px 0;
+		background: #fff;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+		z-index: 200;
+		border-bottom: 2px solid #000;
+
+		&__a {
+			text-decoration: none;
+			display: flex;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+
+		&__logo {
+			display: flex;
+			width: max-content;
+			height: auto;
+			align-items: center;
+			margin: 0 0 0 50px;
+			justify-content: space-between;
+		}
+
+		&__logo-text {
+			display: flex;
+			margin: 0;
+			color: #2c145e;
+			font-family: "Segoe UI";
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 132%;
+			letter-spacing: 3.5px;
+			text-transform: uppercase;
+		}
+
+		&__navigation {
+			display: flex;
+			width: auto;
+			height: auto;
+			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
+			list-style-type: none;
+			margin: 0 50px;
+		}
+
+		&__item {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			align-items: center;
+			gap: 15px;
+			padding: 10px 5px;
+			box-sizing: border-box;
+		}
+
+		&__list {
+			padding: 0 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border: 2px solid $color-main;
+			text-decoration: none;
+			color: #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		&__h4 {
+			display: block;
+			margin-block-start: 1.33em;
+			margin-block-end: 1.33em;
+			margin-inline-start: 0;
+			margin-inline-end: 0;
+			font-weight: bold;
+			color: $color-main;
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		display: flex;
+		padding: 10px 0;
+		background: #fff;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+		z-index: 200;
+		border-bottom: 2px solid #000;
+
+		&__a {
+			text-decoration: none;
+			display: flex;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+
+		&__logo {
+			display: flex;
+			width: max-content;
+			height: auto;
+			align-items: center;
+			margin: 0 0 auto 200px;
+			justify-content: space-between;
+		}
+
+		&__logo-text {
+			display: flex;
+			margin: 0;
+			color: #2c145e;
+			font-family: "Segoe UI";
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 132%;
+			letter-spacing: 3.5px;
+			text-transform: uppercase;
+		}
+
+		&__navigation {
+			display: flex;
+			width: auto;
+			height: auto;
+			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
+			list-style-type: none;
+			margin: 0;
+		}
+
+		&__item {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			align-items: center;
+			gap: 15px;
+			padding: 10px 5px;
+			box-sizing: border-box;
+		}
+
+		&__list {
+			padding: 0 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border: 2px solid $color-main;
+			text-decoration: none;
+			color: #841844;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		&__h4 {
+			display: block;
+			margin-block-start: 1.33em;
+			margin-block-end: 1.33em;
+			margin-inline-start: 0;
+			margin-inline-end: 0;
+			font-weight: bold;
+			color: $color-main;
+		}
+	}
+}

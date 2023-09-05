@@ -1,0 +1,37 @@
+@import "~style";
+
+$block-name: "b-feedback";
+
+.#{$block-name} {
+	@include breakpoint(small) {
+		&__forms {
+			margin: 0 5px;
+		}
+
+		border: 2px solid #841844;
+		margin: 0 5px 30px;
+		width: auto;
+		padding-bottom: 20px;
+	}
+
+	@include breakpoint(medium) {
+		border: 2px solid #841844;
+		margin: 0 auto 30px;
+		width: max-content;
+		padding-bottom: 20px;
+	}
+
+	@include breakpoint(large) {
+		border: 2px solid #841844;
+		margin: 0 auto 30px;
+		width: max-content;
+		padding-bottom: 20px;
+	}
+
+	@include breakpoint(xlarge) {
+		border: 2px solid #841844;
+		margin: 0 auto 30px;
+		width: max-content;
+		padding-bottom: 20px;
+	}
+}

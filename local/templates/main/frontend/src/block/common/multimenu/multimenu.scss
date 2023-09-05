@@ -1,0 +1,515 @@
+@import "~style";
+
+$block-name: "b-multimenu";
+
+.#{$block-name} {
+	&__hight {
+		display: flex;
+
+		.topnav {
+			background-color: #fff;
+			color: #841844;
+			overflow: hidden;
+		}
+
+		.topnav a {
+			float: left;
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			font-size: 17px;
+			padding: 0;
+		}
+
+		.topnav a:hover {
+			background-color: #841844;
+			color: #fff;
+		}
+
+		.topnav .icon {
+			display: none;
+		}
+	}
+
+	@include breakpoint(small) {
+		&__Ablocknone {
+			border: 1px solid var(--brand-color, #841844);
+			background-color: #fff;
+			color: var(--brand-color, #841844);
+		}
+
+		&__hight {
+			.topnav a:not(:first-child) {
+				display: none;
+			}
+
+			.topnav a.icon {
+				float: right;
+				height: 32px;
+				width: 47.55px;
+				display: block;
+				background: url("/local/templates/main/assets/img/tochka.png") center center no-repeat;
+				background-size: 32px;
+				color: #841844;
+			}
+
+			.topnav.responsive {
+				position: relative;
+			}
+
+			.topnav.responsive a.icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 35px;
+				width: 47.55px;
+				background: #fff url("/local/templates/main/assets/img/x.png") center center no-repeat;
+				background-size: 32px;
+				border-top: 1px solid var(--brand-color, #841844);
+				border-bottom: 1px solid var(--brand-color, #841844);
+				border-right: 1px solid var(--brand-color, #841844);
+				color: #841844;
+			}
+
+			.topnav.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+		}
+
+		display: none;
+
+		&__item {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			align-items: center;
+			gap: 15px;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		&__listmenu {
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border: 1px solid var(--brand-color, #841844);
+			text-decoration: none;
+			color: var(--brand-color, #841844);
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+
+			h4 {
+				margin: 5px;
+			}
+		}
+
+		&__listmenu {
+			&:hover {
+				color: #fff;
+				border: 1px solid var(--brand-color, #841844);
+			}
+		}
+
+		&__listmenu--active {
+			border: 1px solid var(--brand-color, #841844);
+			background: var(--brand-color, #841844);
+			color: #fff;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		&__item {
+			&--multilevel,
+			&--multilevel li {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				color: #fff;
+			}
+
+			&--multilevel li:hover,
+			&--multilevel li.jshover {
+				background: #841844;
+				color: #fff;
+			}
+
+			&--multilevel li.#{$block-name}__selected {
+				background: #841844;
+				color: #fff;
+			}
+
+			&--multilevel li ul {
+				position: absolute;
+				top: auto;
+				display: none;
+				z-index: 500;
+				width: min-content;
+				height: max-content;
+				background: #fff;
+				border: 1px solid var(--brand-color, #841844);
+			}
+
+			&--multilevel li li {
+				display: flex;
+				width: 100%;
+				border-bottom: 1px solid #dedede;
+				height: 50px;
+				align-items: center;
+			}
+
+			&--multilevel li:hover ul,
+			&--multilevel li.jshover ul,
+			&--multilevel li li:hover ul,
+			&--multilevel li li.jshover ul,
+			&--multilevel li li li:hover ul,
+			&--multilevel li li li.jshover ul,
+			&--multilevel li li li li:hover ul,
+			&--multilevel li li li li.jshover ul,
+			&--multilevel li li li li li:hover ul,
+			&--multilevel li li li li li.jshover ul {
+				padding: 0 5px;
+				display: block;
+				color: #fff;
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		&__hight {
+			display: none;
+		}
+
+		display: block;
+
+		&__item {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			align-items: center;
+			gap: 15px;
+			padding: 5px;
+			box-sizing: border-box;
+		}
+
+		&__listmenu {
+			padding: 0 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border: 2px solid var(--brand-color, #841844);
+			text-decoration: none;
+			color: var(--brand-color, #841844);
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			height: 40px;
+
+			h4 {
+				margin: 23px;
+			}
+		}
+
+		&__listmenu:hover {
+			color: #fff;
+			border: 2px solid var(--brand-color, #841844);
+		}
+
+		&__listmenu--active {
+			border: 2px solid var(--brand-color, #841844);
+			background: var(--brand-color, #841844);
+			color: #fff;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		&__item {
+			&--multilevel,
+			&--multilevel li {
+				margin: 5px 0;
+				padding: 0;
+				width: 100%;
+				color: #fff;
+			}
+
+			&--multilevel li:hover,
+			&--multilevel li.jshover {
+				background: #841844;
+				color: #fff;
+			}
+
+			&--multilevel li.#{$block-name}__selected {
+				background: #841844;
+				color: #fff;
+			}
+
+			&--multilevel li ul {
+				position: absolute;
+				top: auto;
+				display: none;
+				z-index: 500;
+				width: min-content;
+				height: max-content;
+				background: #fff;
+				border: 2px solid var(--brand-color, #841844);
+			}
+
+			&--multilevel li li {
+				display: flex;
+				width: 100%;
+				border-bottom: 1px solid #dedede;
+				height: 50px;
+				align-items: center;
+			}
+
+			&--multilevel li:hover ul,
+			&--multilevel li.jshover ul,
+			&--multilevel li li:hover ul,
+			&--multilevel li li.jshover ul,
+			&--multilevel li li li:hover ul,
+			&--multilevel li li li.jshover ul,
+			&--multilevel li li li li:hover ul,
+			&--multilevel li li li li.jshover ul,
+			&--multilevel li li li li li:hover ul,
+			&--multilevel li li li li li.jshover ul {
+				padding: 0 5px;
+				display: block;
+				color: #fff;
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		&__hight {
+			display: none;
+		}
+
+		display: block;
+
+		&__item {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			align-items: center;
+			gap: 15px;
+			padding: 10px 5px;
+			box-sizing: border-box;
+		}
+
+		&__listmenu {
+			padding: 0 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border: 2px solid var(--brand-color, #841844);
+			text-decoration: none;
+			color: var(--brand-color, #841844);
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+			height: auto;
+		}
+
+		&__listmenu:hover {
+			color: #fff;
+			border: 2px solid var(--brand-color, #841844);
+		}
+
+		&__listmenu--active {
+			border: 2px solid var(--brand-color, #841844);
+			background: var(--brand-color, #841844);
+			color: #fff;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		&__item {
+			&--multilevel,
+			&--multilevel li {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				color: #fff;
+			}
+
+			&--multilevel li:hover,
+			&--multilevel li.jshover {
+				background: #841844;
+				color: #fff;
+			}
+
+			&--multilevel li.#{$block-name}__selected {
+				background: #841844;
+				color: #fff;
+			}
+
+			&--multilevel li ul {
+				position: absolute;
+				top: auto;
+				display: none;
+				z-index: 500;
+				width: min-content;
+				height: max-content;
+				background: #fff;
+				border: 2px solid var(--brand-color, #841844);
+			}
+
+			&--multilevel li li {
+				display: flex;
+				width: 100%;
+				border-bottom: 1px solid #dedede;
+				height: 50px;
+				align-items: center;
+			}
+
+			&--multilevel li:hover ul,
+			&--multilevel li.jshover ul,
+			&--multilevel li li:hover ul,
+			&--multilevel li li.jshover ul,
+			&--multilevel li li li:hover ul,
+			&--multilevel li li li.jshover ul,
+			&--multilevel li li li li:hover ul,
+			&--multilevel li li li li.jshover ul,
+			&--multilevel li li li li li:hover ul,
+			&--multilevel li li li li li.jshover ul {
+				padding: 0 5px;
+				display: block;
+				color: #fff;
+			}
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		&__hight {
+			display: none;
+		}
+
+		display: block;
+
+		&__item {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			align-items: center;
+			gap: 15px;
+			padding: 10px 5px;
+			box-sizing: border-box;
+		}
+
+		&__listmenu {
+			padding: 0 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border: 2px solid var(--brand-color, #841844);
+			text-decoration: none;
+			color: var(--brand-color, #841844);
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		&__listmenu:hover {
+			color: #fff;
+			border: 2px solid var(--brand-color, #841844);
+		}
+
+		&__listmenu--active {
+			border: 2px solid var(--brand-color, #841844);
+			background: var(--brand-color, #841844);
+			color: #fff;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		&__item {
+			&--multilevel,
+			&--multilevel li {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				color: #fff;
+			}
+
+			&--multilevel li:hover,
+			&--multilevel li.jshover {
+				background: #841844;
+				color: #fff;
+			}
+
+			&--multilevel li.#{$block-name}__selected {
+				background: #841844;
+				color: #fff;
+			}
+
+			&--multilevel li ul {
+				position: absolute;
+				top: auto;
+				display: none;
+				z-index: 500;
+				width: min-content;
+				height: max-content;
+				background: #fff;
+				border: 2px solid var(--brand-color, #841844);
+			}
+
+			&--multilevel li li {
+				display: flex;
+				width: 100%;
+				border-bottom: 1px solid #dedede;
+				height: 50px;
+				align-items: center;
+			}
+
+			&--multilevel li:hover ul,
+			&--multilevel li.jshover ul,
+			&--multilevel li li:hover ul,
+			&--multilevel li li.jshover ul,
+			&--multilevel li li li:hover ul,
+			&--multilevel li li li.jshover ul,
+			&--multilevel li li li li:hover ul,
+			&--multilevel li li li li.jshover ul,
+			&--multilevel li li li li li:hover ul,
+			&--multilevel li li li li li.jshover ul {
+				padding: 0 5px;
+				display: block;
+				color: #fff;
+			}
+		}
+	}
+}

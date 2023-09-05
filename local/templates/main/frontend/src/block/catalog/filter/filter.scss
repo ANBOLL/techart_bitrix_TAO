@@ -1,0 +1,113 @@
+@import "~style";
+
+$block-name: "b-filter";
+
+.#{$block-name} {
+	position: relative;
+	padding-top: 26px;
+	background-color: #e4d5dc;
+
+	&__filter_title {
+		font-size: 18px;
+		margin-bottom: 10px;
+		color: $color-main;
+	}
+
+	&__btn_themes {
+		background-color: #e4d5dc;
+		border-color: $color-main;
+		color: $color-main;
+
+		&:hover {
+			background-color: $color-main;
+			border-color: #fff;
+			color: #fff;
+		}
+	}
+
+	&__btn_link {
+		background-color: #e4d5dc;
+		border-color: $color-main;
+		color: $color-main;
+
+		&:hover {
+			background-color: $color-main;
+			border-color: #fff;
+			color: #fff;
+		}
+
+		&:focus {
+			background-color: $color-main;
+			border-color: #fff;
+			color: #fff;
+		}
+	}
+
+	&__box_title {
+		span {
+			color: $color-main;
+			border-bottom: 1px solid transparent;
+			cursor: pointer;
+		}
+	}
+
+	&__container_block {
+		font-size: 11px;
+		color: $color-main;
+		background-color: #e4d5dc;
+	}
+
+	&__input_container {
+		input {
+			display: block;
+			width: 100%;
+			font-size: 18px;
+			height: 38px;
+			margin: 0;
+			padding: 0 4px;
+			border: 1px solid $color-main;
+			border-radius: 2px;
+			background: #e4d5dc;
+			outline: 0;
+		}
+	}
+
+	&__pricebar_v {
+		background: $color-main;
+		z-index: 80;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+
+	&__pricebar_vn {
+		background: #e4d5dc;
+	}
+
+	&__popup_result {
+		display: inline-block;
+		position: relative;
+		left: auto;
+		right: auto;
+		bottom: -7px;
+		border: 1px solid $color-main;
+		margin-left: 5px;
+		border-radius: 5%;
+		padding: 2px;
+		&#{$block-name}#modef_num {
+			color: $color-main;
+		}
+
+		a {
+			text-decoration: none;
+			color: $color-main;
+			line-height: 10px;
+		}
+	}
+
+	&__param_text {
+		display: block;
+		text-align: left;
+		color: $color-main;
+	}
+}

@@ -1,0 +1,6 @@
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !/local/vendor/techart/bitrix.tao/urlrewrite.php$
+RewriteCond %{REQUEST_URI} !/bitrix/backup/*
+RewriteRule	!\.(js|ico|gif|jpg|jpeg|JPG|png|svg|css|chm|doc|xls|zip|rar|pdf|txt|avi|ttf|woff|eot|woff2|xml)$ /local/vendor/techart/bitrix.tao/urlrewrite.php
+
